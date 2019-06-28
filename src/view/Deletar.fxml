@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="469.0" prefWidth="573.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeletarController">
+  <children>
+    <Button id="button" fx:id="btnNao" layoutX="483.0" layoutY="381.0" styleClass="btn-danger" text="Não">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+    <Button id="button2" fx:id="btnSim" layoutX="419.0" layoutY="380.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" styleClass="btn-success" text="Sim">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+    <Label fx:id="labelDelete" layoutX="22.0" layoutY="-2.0" prefHeight="40.0" prefWidth="552.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #FFA500;" styleClass="h4" text="Deletando veículo">
+      <font>
+        <Font name="Arial Bold" size="44.0" />
+      </font>
+         <opaqueInsets>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </opaqueInsets>
+    </Label>
+      <Label layoutX="22.0" layoutY="60.0" style="-fx-font-weight: bold;" styleClass="h5" text="Modelo">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="203.0" style="-fx-font-weight: bold;" styleClass="p" text="Placa" />
+      <Label layoutX="24.0" layoutY="268.0" style="-fx-font-weight: bold;" styleClass="p" text="Preço">
+         <font>
+            <Font name="Microsoft Sans Serif" size="12.0" />
+         </font></Label>
+      <Label layoutX="26.0" layoutY="336.0" prefWidth="35.0" style="-fx-font-weight: bold;" styleClass="p" text="Ano" />
+      <Label layoutX="22.0" layoutY="136.0" style="-fx-font-weight: bold;" text="Marca" />
+      <Label layoutX="104.0" layoutY="258.0" style="-fx-font-weight: bold;" styleClass="h5" text="R$" />
+      <Label fx:id="labelAdd1" layoutX="179.0" layoutY="429.0" prefHeight="40.0" prefWidth="395.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #FFA500;" text="Todos os direitos reservados.© 2019" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAdd2" layoutX="-2.0" layoutY="-2.0" prefHeight="47.0" prefWidth="24.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #FFA500;" styleClass="h4">
+         <font>
+            <Font name="Arial Bold" size="44.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="labelAdd11" layoutX="-2.0" layoutY="429.0" prefHeight="40.0" prefWidth="181.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #FFA500;" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbID" layoutX="178.0" layoutY="-2.0" style="-fx-font-weight: bold; -fx-text-fill: white;" styleClass="h4" />
+      <Label fx:id="lbModelo" layoutX="124.0" layoutY="72.0" />
+      <Label fx:id="lbMarca" layoutX="124.0" layoutY="136.0" />
+      <Label fx:id="lbPlaca" layoutX="124.0" layoutY="203.0" />
+      <Label fx:id="lbPreco" layoutX="124.0" layoutY="268.0" />
+      <Label fx:id="lbAno" layoutX="124.0" layoutY="336.0" />
+      <Label layoutX="25.0" layoutY="384.0" style="-fx-font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; -fx-font-size: 16px; -fx-font-weight: bold;" text="Você tem certeza que deseja remover o veículo???">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgFoto" fitHeight="150.0" fitWidth="200.0" layoutX="301.0" layoutY="157.0" pickOnBounds="true" />
+      <Label layoutX="371.0" layoutY="136.0" style="-fx-font-weight: bold;" text="Imagem" />
+  </children>
+</AnchorPane>

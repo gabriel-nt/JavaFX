@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="810.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
+  <children>
+    <Button fx:id="btnAdd" cache="true" graphicTextGap="5.0" layoutX="448.0" layoutY="79.0" styleClass="btn-success" stylesheets="@style.css" text="Adicionar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+    <TableView id="table" fx:id="tbTabela" layoutX="8.0" layoutY="121.0" prefHeight="256.0" prefWidth="525.0">
+      <columns>
+        <TableColumn fx:id="clID" editable="false" prefWidth="54.0" text="ID" />
+        <TableColumn fx:id="clModelo" editable="false" prefWidth="99.0" text="MODELO" />
+        <TableColumn fx:id="clMarca" editable="false" prefWidth="89.0" text="MARCA" />
+        <TableColumn fx:id="clPreco" editable="false" minWidth="0.0" prefWidth="101.0" text="PREÇO" />
+        <TableColumn fx:id="clAno" editable="false" prefWidth="93.0" text="ANO" />
+            <TableColumn fx:id="clPlaca" editable="false" prefWidth="88.0" text="PLACA" />
+      </columns>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+    </TableView>
+    <Label layoutX="167.0" layoutY="64.0" style="-fx-font-weight: bold; -fx-font-family: Arial;" text="Lista de Veículos">
+         <styleClass>
+            <String fx:value="h3" />
+            <String fx:value="text-field" />
+         </styleClass>
+    </Label>
+      <Button id="button2" fx:id="btnEditar" layoutX="382.0" layoutY="388.0" mnemonicParsing="false" styleClass="btn-warning" text="Editar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="button2" fx:id="btnDeletar" layoutX="454.0" layoutY="388.0" mnemonicParsing="false" styleClass="btn-danger" text="Remover">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="labelAdd1" layoutX="296.0" layoutY="432.0" prefHeight="47.0" prefWidth="514.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #FFA500;" text="Todos os direitos reservados.© 2019" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAdd11" layoutX="-8.0" layoutY="432.0" prefHeight="47.0" prefWidth="304.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #FFA500;" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAdd" layoutX="303.0" prefHeight="57.0" prefWidth="507.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #FFA500;" styleClass="h4" text="CRUD DE AUTOMÓVEIS">
+         <font>
+            <Font name="Arial Bold" size="44.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="labelAdd2" layoutX="-1.0" prefHeight="57.0" prefWidth="304.0" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #FFA500;" styleClass="h4">
+         <font>
+            <Font name="Arial Bold" size="44.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <CheckBox fx:id="checkBtn" layoutX="14.0" layoutY="79.0" mnemonicParsing="false" onAction="#onOff" prefHeight="34.0" prefWidth="85.0" style="-fx-padding: 5px;" text="Botões">
+         <styleClass>
+            <String fx:value="btn-info" />
+            <String fx:value="check-box" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <ImageView fx:id="imgFoto" fitHeight="150.0" fitWidth="218.0" layoutX="566.0" layoutY="122.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/sem-foto.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="566.0" layoutY="292.0" style="-fx-font-weight: bold;" text="ID:" />
+      <Label layoutX="566.0" layoutY="318.0" style="-fx-font-weight: bold;" text="Modelo:" />
+      <Label layoutX="566.0" layoutY="347.0" style="-fx-font-weight: bold;" text="Placa:" />
+      <Label layoutX="616.0" layoutY="64.0" style="-fx-font-weight: bold; -fx-font-family: Arial;" text="Detalhes">
+         <styleClass>
+            <String fx:value="h3" />
+            <String fx:value="text-field" />
+         </styleClass>
+      </Label>
+      <Label fx:id="lbID" layoutX="588.0" layoutY="291.0" />
+      <Label fx:id="lbModelo" layoutX="624.0" layoutY="318.0" />
+      <Label fx:id="lbPlaca" layoutX="608.0" layoutY="347.0" />
+  </children>
+</AnchorPane>
