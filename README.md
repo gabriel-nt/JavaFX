@@ -1,3 +1,3 @@
 # JavaFX
 
-Aplicação feita com JavaFX e estilizado com Bootstrao
+Aplicação feita com JavaFX e estilizado com Bootstrap
