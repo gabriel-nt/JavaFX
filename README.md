@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/Gabriel-Teixeira/Zend-Framework/blob/master/public/img/logo.svg" alt="logo.svg" height="70"/>
+    <img src="https://github.com/Gabriel-Teixeira/JavaFX/blob/master/src/images/logo.png" alt="logo" height="100"/>
 </p>
 <h1 align="center">
     🚀 JavaFX
